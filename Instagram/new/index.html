@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+         .image{
+            height: 400px;
+            width: 400px;
+            position: relative;
+
+        }
+        .image img {
+            height: 400px;
+            width: 400px;
+        } 
+        .image .content {
+            height:0px;
+            width: 400px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            color: rgb(176, 9, 9);
+            text-align: center;
+            background-color: rgba(14, 12, 12, 0.112);
+            transition: 1s ease all;
+            overflow: hidden;
+        }   
+        .image:hover .content{
+            background-color: rgba(0, 255, 255, 0.4);
+            height: 400px;            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="../images/Tahid.jpg" alt="">
+    <div class="content">
+        <h3>hero section</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nihil, dolores culpa iusto fugit suscipit</p>
+    </div>
+</div>
+
+</body>
+</html>

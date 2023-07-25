@@ -1,0 +1,592 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.blur {
+    filter: blur(2px);
+}
+
+.navigation {
+    background-color: rgba(251, 249, 249, 0.789);
+}
+
+.container .nav-p {
+    padding: 10px 50px;
+}
+
+.container .nav-f {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .nav-right ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(20, 199, 248, 0.358);
+    z-index: 11111;
+    padding: 20px;
+    position: relative;
+
+}
+
+.nav-f .nav-logo a {
+    font-size: 30px;
+    color: rgb(254, 18, 171);
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+.nav-f .nav-right a {
+    color: blue;
+    font-size: 17px;
+}
+
+.nav-f .btn {
+    color: rgb(59, 59, 242);
+    font-size: large;
+    display: none;
+}
+
+.nav-f .nav-right .ul-f {
+    padding-top: 10px;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-f .nav-right .ul-f li a:hover {
+    color: rgba(255, 20, 235, 0.859);
+}
+
+.nav-f .nav-right #menu {
+    position: relative;
+}
+
+.nav-f .nav-right #menu .insta-h {
+    color: blue;
+}
+
+
+.nav-f .nav-right .disp-menu {
+    display: none;
+    background-color: rgba(255, 248, 255, 0.764);
+    /* border-radius: 20px; */
+    text-align: center;
+    z-index: 1111;
+    width: 100%;
+    border-radius: 10%;
+    position: absolute;
+    top: 30px;
+}
+
+
+/* ========== features =====================*/
+.feature {
+    padding: 60px;
+    text-align: center;
+    background: linear-gradient(rgb(72, 108, 241), pink, rgba(255, 20, 145, 0.736));
+}
+
+.feature .btn button {
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    /* background-color: transparent; */
+    font-size: 20px;
+    background-color: rgb(128, 128, 128);
+}
+
+.feature .btn button:hover {
+    background-color: rgb(225, 39, 139);
+}
+
+.feature .btn button a {
+    color: aliceblue;
+}
+
+.feature .about {
+    padding: 25px;
+}
+
+.feature .about h2 {
+    font-size: 28px;
+    padding: 10px;
+    color: rgb(4, 4, 4);
+}
+
+.feature .about p {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.feature .about .inp input[type="text"] {
+    height: 50px;
+    width: 600px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+}
+
+.feature .about .inp button {
+    height: 50px;
+    width: 120px;
+    border-radius: 20px;
+    position: absolute;
+    background-color: rgb(64, 64, 252);
+    border: none;
+    color: white;
+}
+
+.feature .about .inp button a {
+    color: white;
+}
+
+/* =========== footer ======== */
+.footer {
+    background-color: black;
+    width: 100%;
+}
+
+.footer .footer-p {
+    padding: 20px;
+}
+
+.footer .footer-containt a {
+    color: rgb(254, 18, 171);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-size: 28px;
+}
+
+.footer .footer-about {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.footer .footer-about a {
+    color: whitesmoke;
+}
+
+.footer .footer-icon {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.footer .footer-icon a {
+    color: white;
+    font-size: 25px;
+}
+
+.footer .artist .image img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    border-bottom: 4px solid rgb(239, 251, 65);
+    border-top: 4px solid rgb(67, 227, 9);
+    animation: round 4s ease;
+}
+@keyframes round{
+100% {
+    transform: rotate(1turn);
+}    
+}
+
+
+
+/* =============================== Media Query ========================*/
+@media(max-width:360px) {
+
+
+    .container .nav-f {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-f .btn1 {
+        position: absolute;
+        top: 10px;
+        right: 5px;
+    }
+
+    .nav-f .nav-logo a {
+        font-size: 22px;
+        color: rgb(254, 18, 171);
+    }
+
+    .nav-f .nav-right {
+        color: blue;
+        font-size: 17px;
+        display: none;
+
+    }
+
+    .nav-f .btn1 {
+        color: rgb(59, 59, 242);
+        font-size: large;
+        display: block;
+    }
+
+    .nav-f .nav-right .ul-f {
+        padding-top: 10px;
+        display: flex;
+        gap: 0px;
+    }
+
+    .nav-f .nav-right .ul-f li a:hover {
+        color: rgba(255, 20, 235, 0.859);
+    }
+
+    .nav-f .nav-right #menu {
+        position: relative;
+    }
+
+    .nav-f .nav-right #menu .insta-h {
+        color: blue;
+    }
+
+    .nav-f .nav-right .disp-menu {
+        display: none;
+        background-color: rgba(255, 248, 255, 0.764);
+        /* border-radius: 20px; */
+        text-align: center;
+        z-index: 111;
+        width: 100%;
+        border-radius: 10%;
+        position: absolute;
+        top: 30px;
+    }
+
+
+
+
+    /* ========== features =====================*/
+    .feature {
+        padding: 60px;
+        /* text-align: center; */
+        background: linear-gradient(rgb(72, 108, 241), pink, rgba(255, 20, 145, 0.736));
+    }
+
+    .feature .btn {
+        display: grid;
+        gap: 10px;
+        justify-items: center;
+    }
+
+
+    .feature .btn button {
+        height: 40px;
+        width: 200px;
+        border-radius: 10px;
+        border: none;
+        /* background-color: transparent; */
+        font-size: 20px;
+        /* padding: 10px; */
+        background-color: rgba(37, 10, 158, 0.637);
+    }
+
+    .feature .btn button:hover {
+        background-color: rgb(225, 39, 139);
+    }
+
+    .feature .btn button a {
+        color: aliceblue;
+    }
+
+    .feature .about {
+        padding: 25px;
+        width: 100%;
+    }
+
+    .feature .about p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .feature .about .inp input[type="text"] {
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 20px;
+        border: none;
+        position: relative;
+    }
+
+    .feature .about .inp button {
+        height: 50px;
+        width: 80px;
+        border-radius: 20px;
+        position: absolute;
+        background-color: rgb(64, 64, 252);
+        border: none;
+        color: white;
+    }
+
+    .feature .about .inp button a {
+        color: white;
+    }
+    
+}
+
+
+/* ========================= 576px ================ */
+@media(max-width:576px){
+    navigation {
+        background-color: rgba(251, 249, 249, 0.789);
+    }
+    
+    .container .nav-p {
+        padding: 10px 50px;
+    }
+    
+    .container .nav-f {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .container .nav-right ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(53, 199, 239);
+        z-index: 11111;
+        /* padding: 20px; */
+        position: relative;
+    
+    }
+    
+    .nav-f .nav-logo a {
+        font-size: 30px;
+        color: rgb(254, 18, 171);
+    }
+    
+    .nav-f .nav-right a {
+        color: blue;
+        font-size: 17px;
+    }
+    
+    .nav-f .nav-right .btn {
+        display: block;
+        color: rgb(59, 59, 242);
+        font-size: large;
+    }
+    
+    .nav-f .nav-right .ul-f {
+        padding-top: 10px;
+        display: flex;
+        gap: 30px;
+        background-color:white;
+        
+    }
+    
+    .nav-f .nav-right .ul-f li a:hover {
+        color: rgba(255, 20, 235, 0.859);
+    }
+    
+    .nav-f .nav-right #menu {
+        position: relative;
+    }
+    
+    .nav-f .nav-right #menu .insta-h {
+        color: blue;
+    }
+    
+    
+    .nav-f .nav-right .disp-menu {
+        display: none;
+        background-color: rgba(255, 248, 255, 0.764);
+        /* border-radius: 20px; */
+        text-align: center;
+        z-index: 1111;
+        width: 100%;
+        border-radius: 10%;
+        position: absolute;
+        top: 30px;
+    }
+
+    /* ============== features ====================== */
+   
+    .feature .btn button {
+        height: 40px;
+        width: 200px;
+        border-radius: 10px;
+        border: none;
+        margin-top: 20px;
+        margin-left: 10px;
+        /* background-color: transparent; */
+        font-size: 20px;
+        background-color: rgb(128, 128, 128);
+    }
+    
+    
+    .feature .about p {
+        font-size: 20px;
+        font-weight: 500;
+        padding: 20px;
+    }
+    
+    .feature .about .inp input[type="text"] {
+        height: 40px;
+        width: 80%;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 20px;
+        border: none;
+        position: relative;
+    }
+    
+    .feature .about .inp button {
+        height: 40px;
+        width: 90px;
+        border-radius: 20px;
+        position: absolute;
+        background-color: rgb(64, 64, 252);
+        border: none;
+        color: white;
+    }
+} 
+@media(min-width:576px){
+
+    .container .nav-right ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(20, 199, 248, 0.358);
+        z-index: 11111;
+        padding: 20px;
+        position: relative;
+    
+    }
+
+    
+    .nav-f .nav-right .ul-f {
+        padding-top: 10px;
+        display: flex;
+        gap: 30px;
+        background-color: rgba(240, 248, 255, 0.41);
+        border-radius: 20px;
+    }
+    
+    .nav-f .nav-right .ul-f li a:hover {
+        color: rgba(255, 20, 235, 0.859);
+    }
+    
+    .nav-f .nav-right #menu {
+        position: relative;
+    }
+    
+    .nav-f .nav-right .disp-menu {
+        display: none;
+        background-color: rgba(255, 248, 255, 0.764);
+        /* border-radius: 20px; */
+        text-align: center;
+        z-index: 1111;
+        width: 100%;
+        border-radius: 10%;
+        position: absolute;
+        top: 30px;
+    }
+    
+    
+    /* ========== features =====================*/
+    .feature {
+        padding: 60px;
+        text-align: center;
+        background: linear-gradient(rgb(72, 108, 241), pink, rgba(255, 20, 145, 0.736));
+    }
+    
+    .feature .btn button {
+        height: 40px;
+        width: 200px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        border: none;
+        /* background-color: transparent; */
+        font-size: 20px;
+        background-color: rgb(128, 128, 128);
+    }
+    
+    .feature .about .inp input[type="text"] {
+        height: 40px;
+        width: 80%;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 20px;
+        border: none;
+        position: relative;
+    }
+    
+    .feature .about .inp button {
+        height: 40px;
+        width: 90px;
+        border-radius: 20px;
+        position: absolute;
+        background-color: rgb(64, 64, 252);
+        border: none;
+        color: white;
+    }
+    
+    .feature .about .inp button a {
+        color: white;
+    }  
+}
+@media(min-width:768px){
+    
+    .container .nav-f {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    }
+    .container .nav-right ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(20, 199, 248, 0.358);
+        z-index: 11111;
+        padding: 20px;
+        position: relative;
+    
+    }
+    .container .nav-right ul li {
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 20px;
+        border: none;
+        background-color: rgba(245, 175, 250, 0.471);
+    }
+
+    
+    .nav-f .nav-right .ul-f {
+        padding-top: 10px;
+        display: flex;
+        gap: 20px;
+        background-color: rgba(240, 248, 255, 0.41);
+        border-radius: 20px;
+    }
+    
+    .btn1{
+        display: none;
+    }
+}

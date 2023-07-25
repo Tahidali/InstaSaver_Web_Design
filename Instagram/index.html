@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- ======================= animation link ====================-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- ===== fontawesome cdn =========== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js" />
+<!-- 
+    <script>
+      $(document).ready(function () {
+        $("#menu").click(function () {
+          $(".disp-menu").fadeToggles(100);
+        });
+      });
+      $(document).ready(function () {
+        $("#menu").click(function () {
+          $(".feature").toggleClass("blur");
+        });
+      });
+      $(document).ready(function () {
+        $("#btn-bars").click(function () {
+          $(".nav-right").toggle(240);
+        });
+      });
+
+    
+    </script> -->
+  </head>
+
+  <body>
+    <!-- ======================== Nav ===================== -->
+    <section class="navigation" data-aos="fade-down-top">
+      <div class="container">
+        <div class="nav-p">
+          <div class="nav-f">
+            <div class="nav-logo">
+              <h3>
+                <a href=""
+                  >Insta<span class="fa-solid fa-arrow-down"></span>Saver
+                </a>
+              </h3>
+            </div>
+            <div class="nav-right">
+              <ul class="ul-f">
+                <li>
+                  <h4>
+                    <a href="">Instagram video downloader</a>
+                  </h4>
+                </li>
+                <li>
+                  <h4><a href="">Private downloader</a></h4>
+                </li>
+                <li>
+                  <h4 id="menu">
+                    <span class="insta-h"> Instagram downloader</span>
+                    <span class="fa-solid fa-angle-down"></span>
+                    <ul class="disp-menu">
+                      <li><a href="">Photo Downloader</a></li>
+                      <li><a href="">Reels Downloader</a></li>
+                      <li><a href="">Story Downloader</a></li>
+                      <li><a href="">IGTV Downloader</a></li>
+                      <li><a href="">How to use</a></li>
+                    </ul>
+                  </h4>
+                </li>
+              </ul>
+            </div>
+            <button class="btn1" id="btn-bars">
+              <span class="fa-solid fa-bars"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== features =================== -->
+    <section class="feature" data-aos="fade-down-right">
+      <div class="container">
+        <div class="btn">
+          <button>
+            <a href=""><span class="fa-solid fa-circle-play"></span> video</a>
+          </button>
+          <button>
+            <a href=""><span class="fa-solid fa-image"></span> Photo</a>
+          </button>
+          <button>
+            <a href=""><span class="fa-solid fa-film"></span> Reels</a>
+          </button>
+          <button>
+            <a href=""><span class="fa-solid fa-photo-film"></span> Stories</a>
+          </button>
+          <button>
+            <a href=""><span class="fa-solid fa-television"></span> IGTV</a>
+          </button>
+        </div>
+        <div class="about">
+          <h2>Instagram Downloader</h2>
+          <p>Download Videos, Photos, Reels, Stories and IGTV from Instagram</p>
+          <div class="inp">
+            <input type="text" placeholder="Paste URL Instagram" />
+            <button id="SubmitBtn"><a href="" > Download</a></button>
+            <p>
+              <a href="https://www.youtube.com/watch?v=AhfY3ha51l0">
+                How to download Instagram video</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============== footer ================= -->
+    <section class="footer">
+      <div class="container">
+        <div class="footer-p">
+          <div class="footer-containt">
+            <h3><a href="">Insta~Save</a></h3>
+          </div>
+          <div class="footer-about">
+            <h5>
+              <a href="">Home</a>
+            </h5>
+            <h5>
+              <a href="">Agent</a>
+            </h5>
+            <h5>
+              <a href="">About</a>
+            </h5>
+            <h5>
+              <a href="">Contact</a>
+            </h5>
+          </div>
+          <div class="footer-icon">
+            <div class="footer-logo">
+              <a href=""><span class="fa-brands fa-facebook"></span></a>
+            </div>
+            <div class="footer-logo">
+              <a href=""><span class="fa-brands fa-instagram"></span></a>
+            </div>
+            <div class="footer-logo">
+              <a href=""><span class="fa-brands fa-github"></span></a>
+            </div>
+            <div class="footer-logo">
+              <a href=""><span class="fa-brands fa-twitter"></span></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="artist"
+          style="color: white; padding-bottom: 60px; text-align: center"
+        >
+          <div class="image">
+            <img src="images/Tahid.jpg" alt="" />
+          </div>
+          <h3>Designed By Tahid Aziz</h3>
+        </div>
+      </div>
+    </section>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
